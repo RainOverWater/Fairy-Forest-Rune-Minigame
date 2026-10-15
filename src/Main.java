@@ -7,7 +7,7 @@ void main() {
 
     // ask player if they would like to start the game
     // loop until player chooses a valid answer
-    while (choice != "exit") {
+    while (!choice.equalsIgnoreCase("exit")) {
         IO.println("Play rune game? yes/no");
 
         choice = scan.nextLine().toLowerCase();
